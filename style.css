@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    width: 100%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* google fonts */
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Padauk', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* small screen */
+
+@media (min-width: 576px){
+    .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* medium screen */
+@media (min-width: 768px){
+    .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+
+/* large screen */
+
+@media (min-width: 992px){
+    .header{
+        position: sticky !important;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .logo{
+        text-align: left;
+        /* padding: 20px !important; */
+    }
+    .nav{
+        text-align: right;
+    }
+    .nav ul li{
+        display: inline-block;
+        padding: 20px;
+        line-height: 34px;
+    }
+    .nav ul li a{
+        display: inline-block;
+        font-size: 20px !important;
+        transition: 0.5s;
+        
+    }
+    .nav ul li a:hover{
+       transform: scale(1.1);
+       background-color: transparent !important;
+       text-decoration: underline;
+    }
+
+    .banner{
+        height: 100vh;
+        position: relative;
+    }
+    .banner-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .banner-content h1{
+        font-size: 4.5rem !important;
+        width: 700px !important;
+        color: yellow !important;
+        text-shadow: 3px 3px 2px rgb(214 0 0) !important;
+    }
+    .banner-content p{
+        color: yellow !important;
+        /* text-shadow: 3px 3px 2px rgb(214 0 0) !important; */
+        font-size: 1.9rem !important;
+    }
+    .card-img img{
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .card-img img:hover{
+        transform: scale(1.1);
+    }
+    .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+}
+
+/* header */
+
+.header{
+    background-color: rgb(10, 75, 10);
+    color: #fff;
+    text-align: center;
+}
+.logo{
+    padding: 10px;
+}
+.logo i{
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    display: block;
+    padding: 8px;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+.nav ul li a:hover{
+    background-color: rgb(5, 107, 5);
+    border-radius: 10px;
+}
+
+/* banner */
+
+.banner{
+    background: url(./images/199623139_2972692066323669_8501676954605006364_n.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner-content{
+    padding: 70px 10px;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    /* background-color: rgb(38, 90, 55); */
+    color: rgb(236, 232, 5);
+    text-shadow: 3px 3px 4px rgb(7, 6, 6);
+    margin: 5px auto;
+    width: 500px;
+    font-family: 'Indie Flower', cursive;
+    
+}
+.banner-content p{
+    color: rgb(198, 211, 14);
+    text-shadow: 3px 3px 7px rgb(7, 6, 6);
+    font-size: 1.6rem;
+}
+.btn{
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background-color: brown;
+    color: #fff;
+}
+
+/* about */
+
+.about{
+    padding: 2%;
+    text-align: center;
+}
+.about-content h3{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.about-content p{
+    padding: 13px;
+}
+
+/* services-section */
+
+.services-section{
+   padding: 1%;
+   
+}
+.card-img{
+    text-align: center;
+}
+.services-section h3{
+    text-transform: uppercase;
+    padding: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+.card-img h5{
+    margin-bottom: 15px;
+}
+.card-details p{
+    font-size: 18px;
+}
+
+/* contact-section */
+.contact{
+    padding: 1%;
+    background-color: #dddd;
+}
+.contact-section{
+   padding: 30px 0;
+
+}
+.map iframe{
+    width: 100%;
+    height: 250px;
+
+}
+.form{
+    text-align: center;
+    
+}
+.form input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 17px;
+    border-radius: 7px;
+}
+.form textarea{
+    width: 100%;
+    resize: none;
+    border-radius: 7px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+.form .btn{
+    background-color: green;
+    margin-right: 15px;
+    color: #fff;
+}
+.con-details{
+    text-align: center;
+}
+.con-details h5{
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.2rem;
+}
+.con-details h4{
+    font-size: 1.9rem;
+    margin-bottom: 12px;
+}
+.con-details i{
+    margin-right: 15px;
+}
+.con-details a{
+    color: rgba(46, 93, 138, 0.867);
+}
+.con-details p{
+    padding: 4px;
+}
+
+/* footer */
+
+.footer{
+    padding: 1%;
+    background-color: rgb(10, 75, 10);
+    color: #fff;
+}
+.footer p{
+    text-align: center;
+    padding: 30px;
+    font-size: 1.0rem;
+}
