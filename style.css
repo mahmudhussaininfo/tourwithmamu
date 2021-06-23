@@ -41,6 +41,29 @@ font-family: 'Padauk', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 /* small screen */
+@media (max-width: 508px){
+    .header{
+        width: 524px;
+    }
+    .banner{
+        width: 524px;
+    }
+    .about{
+        width: 524px;
+    }
+    .services-section{
+        width: 524px;
+    }
+    .contact{
+        width: 524px;
+    }
+    .footer{
+        width: 524px;
+    }
+   
+    
+}
+
 
 @media (min-width: 576px){
     .col-s-1 {width: 8.33%;}
